@@ -1,0 +1,29 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<div id="times">
+
+	</div>
+	<script type="text/javascript">
+		function getD1() {
+			//当前时间
+			var date = new Date();
+			//格式化
+			var d1 = date.toLocaleString();
+			//获取div
+			var div1 = document.getElementById("times");
+			div1.innerHTML = d1;
+		}
+
+		//使用定时器实现每一秒写一次时间
+		setInterval("getD1();",1000);
+		
+	</script>
+
+ </body>
+</html>

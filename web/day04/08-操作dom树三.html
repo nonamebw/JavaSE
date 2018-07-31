@@ -1,0 +1,37 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<ul id="ulid31">
+		<li id="li21">西施</li>
+		<li id="li22">王昭君</li>
+		<li id="li23">貂蝉</li>
+		<li id="li24">杨玉环</li>
+	</ul>
+
+	<input type="button" value="remove" onclick="remove1();"/>
+	<script type="text/javascript">
+		//删除<li id="li24">杨玉环</li>
+		function remove1() {		
+			/*
+				1、获取到li24标签
+				2、获取父节点ul标签
+				3、执行删除（通过父节点删除）
+			*/
+			//获取li标签
+			var li24 = document.getElementById("li24");
+			//获取父节点
+			//两种方式  1、通过id获取 ； 2、通过属性 parentNode获取
+			var ul31 = document.getElementById("ulid31");
+			//删除（通过父节点）
+			ul31.removeChild(li24);
+		}
+		
+	</script>
+
+ </body>
+</html>

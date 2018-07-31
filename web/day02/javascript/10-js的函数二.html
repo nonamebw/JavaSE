@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<script type="text/javascript">
+
+		//第二种方式创建函数
+		var add3 = function(m,n) {
+			alert(m+n);
+		}
+
+		//调用方法
+		//add3(5,6);
+
+		//第三种方式创建函数
+		var canshu = "x,y";
+		var fangfati = "var sum;sum=x+y;return sum;";
+
+		var add4 = new Function(canshu,fangfati);
+		alert(add4(3,5));
+	</script>
+
+ </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<input type="button" value="interval" onclick="clear1();"/>
+	<br/>
+	<input type="button" value="timeout" onclick="clear2();"/>
+
+	<script type="text/javascript">
+		
+		//演示setInterval方法
+		//var id1 = setInterval("alert('123');",3000);
+
+		//演示setTimeout方法
+		var id2 = setTimeout("alert('abc');",4000);
+
+		//清除setInterval
+		function clear1() {
+			clearInterval(id1);
+		}
+		//清除setTimeout
+		function clear2() {
+			clearTimeout(id2);
+		}
+	</script>
+
+ </body>
+</html>

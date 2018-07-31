@@ -1,0 +1,44 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<ul id="ulid41">
+		<li id="li31">紫衫龙王</li>
+		<li id="li32">白眉鹰王</li>
+		<li id="li33">金毛狮王</li>
+		<li id="li34">青翼蝠王</li>
+	</ul>
+
+	<div id="divv"> 
+	
+	</div>
+
+	<input type="button" value="copy" onclick="copy1();"/>
+	<script type="text/javascript">
+		function copy1() {
+			//把ul列表复制到另外一个div里面
+			/*
+				1、获取到ul
+				2、执行复制方法 cloneNode方法复制 true
+				3、把复制之后的内容放到div里面去
+					** 获取到div
+					** appendChild方法
+			*/
+			//获取ul
+			var ul41 = document.getElementById("ulid41");
+			//复制ul，放到类似剪切板里面
+			var ulcopy = ul41.cloneNode(true)
+			//获取到div
+			var divv = document.getElementById("divv");
+			//把副本放到div里面去
+			divv.appendChild(ulcopy);
+		}
+
+	</script>
+
+ </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<script type="text/javascript">
+
+		
+		//eval方法
+		var str = "alert('1234');";
+		//alert(str);
+		//eval(str);
+
+		//encodeURI
+		document.write("<hr/>");
+		var str1 = "测试中文aaa1234";
+		var encode1 = encodeURI(str1);
+		document.write(encode1);
+
+		document.write("<hr/>");
+		var decode1 = decodeURI(encode1);
+		document.write(decode1);
+
+		//isNaN 返回 true和false
+		var str2 = "aaaa";
+		//alert(isNaN(str2));
+
+
+		document.write("<hr/>");
+		//parseInt
+		var str3 = "123";
+		document.write(parseInt(str3)+1);
+
+	</script>
+
+ </body>
+</html>

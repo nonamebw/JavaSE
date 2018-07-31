@@ -1,0 +1,87 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<script type="text/javascript">
+
+		//length属性
+		var arr1 = [1,2,3];
+		document.write(arr1.length);
+
+		//concat()方法
+		document.write("<hr/>");
+		var arr11 = [1,2,3];
+		var arr12 = [4,5,6];
+		document.write(arr11.concat(arr12));
+
+		//join方法
+		document.write("<hr/>");
+		var arr13 = new Array(3);
+		arr13[0] = "a";
+		arr13[1] = "b";
+		arr13[2] = "c";
+
+		document.write(arr13);
+		document.write("<br/>");
+		document.write(arr13.join("-"));
+
+		document.write("<hr/>");
+		//push方法
+		var arr14 = new Array(3);
+		arr14[0] = "tom";
+		arr14[1] = "lucy";
+		arr14[2] = "jack";
+		document.write("old array: "+arr14);
+
+		document.write("<br/>");
+		document.write("old length:"+arr14.length);
+
+		document.write("<br/>");
+		document.write("new length: "+arr14.push("zhangsan"));
+
+		document.write("<br/>");
+		document.write("new array: "+arr14);
+
+
+		document.write("<hr/>");
+		var arr15 = ["aaa","bbb","ccc"];
+		var arr16 = ["www","qqq"];
+
+		document.write("old array:"+arr15);
+		document.write("<br/>");
+		document.write("old length:"+arr15.length);
+
+		document.write("<br/>");
+		document.write("new length:"+arr15.push(arr16));
+		document.write("<br/>");
+		document.write("new array: "+arr15);
+		for(var i=0;i<arr15.length;i++) {
+			//alert(arr15[i]);
+		}
+
+		//pop方法
+		document.write("<hr/>");
+		var arr17 = ["zhangsan","lisi","wangwu","zhaoliu"];
+
+		document.write("old array: "+arr17);
+		document.write("<br/>");
+
+		document.write("return: "+arr17.pop());
+		document.write("<br/>");
+		document.write("new array: "+arr17);
+
+		//reverse方法
+		document.write("<hr/>");
+		var arr18 = ["zhangsan1","lisi1","zhaoliu1","niuqi1"];
+		document.write("old array: "+arr18);
+		document.write("<br/>");
+		document.write("new array:"+arr18.reverse());
+		
+	</script>
+
+ </body>
+</html>

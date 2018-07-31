@@ -1,0 +1,44 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<ul id="ulid41">
+		<li id="li31">紫衫龙王</li>
+		<li id="li32">白眉鹰王</li>
+		<li id="li33">金毛狮王</li>
+		<li id="li34">青翼蝠王</li>
+	</ul>
+
+	<input type="button" value="replace" onclick="replace1();"/>
+	<script type="text/javascript">
+		//<li id="li34">青翼蝠王</li>替换  <li>张无忌</li>
+		function replace1() {
+			/*
+				1、获取到li34
+				2、创建标签li
+				3、创建文本
+				4、把文本添加到li下面
+				5、获取ul标签（父节点）
+				6、执行替换操作 （replaceChild(newNode,oldNode)）
+			*/
+			//获取li34
+			var li34 = document.getElementById("li34");
+			//创建li
+			var li35 = document.createElement("li");
+			//创建文本
+			var text35 = document.createTextNode("张无忌");
+			//把文本添加到li下面
+			li35.appendChild(text35);
+			//获取ul
+			var ul41 = document.getElementById("ulid41");
+			//替换节点
+			ul41.replaceChild(li35,li34);
+		}
+	</script>
+
+ </body>
+</html>

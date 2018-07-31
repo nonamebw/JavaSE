@@ -1,0 +1,44 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+
+	<ul id="ulid">
+		<li id="li1">qqqqq</li>
+		<li id="li2">wwww</li>
+		<li id="li3">yyyyyy</li>
+		<li id="li4">test1111</li>
+	</ul>
+
+	<script type="text/javascript">
+		
+		//得到li1
+		/*var li1 = document.getElementById("li1");
+		//得到ul
+		var ul1 = li1.parentNode;
+		alert(ul1.id);*/
+
+		//获取ul的第一个子节点 id=li1
+		//得到ul
+		var ul1 = document.getElementById("ulid");
+		//第一个子节点
+		/*var li1 = ul1.firstChild;
+		alert(li1.id);*/
+
+		//得到最后一个子节点
+		/*var li4 = ul1.lastChild;
+		alert(li4.id);*/
+
+		//获取li的id是li3的上一个和下一个兄弟节点
+		var li3 = document.getElementById("li3");
+		//alert(li3.nextSibling.id);
+		alert(li3.previousSibling.id);
+		
+	</script>
+
+ </body>
+</html>

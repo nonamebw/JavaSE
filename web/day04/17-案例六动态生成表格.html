@@ -1,0 +1,58 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	行：<input type="text" id="h" />
+	列：<input type="text" id="l" />
+	<br/>
+	<input type="button" value="生成" onclick="add2();"/>
+
+	<div id="divv">
+
+	</div>
+	<script type="text/javascript">
+		
+		function add2() {
+		
+			/*
+				1、得到输入的行和列的值
+				2、生成表格
+					** 循环行
+					** 在行里面循环单元格
+				3、显示到页面上
+					- 把表格的代码设置到div里面
+					- 使用innerHTML属性
+			*/
+			//获取输入的行和列
+			var h = document.getElementById("h").value;
+			var l = document.getElementById("l").value;
+
+			//把表格代码放到一个变量里面
+			var tab = "<table border='1' bordercolor='blue'>";
+			//循环行
+			for(var i=1;i<=h;i++) {
+				tab += "<tr>";
+				//循环单元格
+				for(var j=1;j<=l;j++) {
+					tab += "<td>aaaaaaa</td>"
+				}
+				tab += "</tr>";
+			}
+
+			tab += "</table>";
+
+			//alert(tab);
+			//得到div标签
+			var divv = document.getElementById("divv");
+			//把table的代码设置到div里面去
+			divv.innerHTML = tab;
+		}
+		
+	</script>
+
+ </body>
+</html>

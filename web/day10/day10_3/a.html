@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<html>
+  <head>
+    <title>a.html</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  
+  <body>
+<h1>测试请求参数</h1>
+<a href="/day10_3/AServlet?xxx=XXX&yyy=YYY">点击这里</a>
+<hr/>
+<form action="/day10_3/AServlet" method="post">
+  用户名：<input type="text" name="username"/><br/>
+  密　码：<input type="password" name="password"/><br/>
+  爱　好：<input type="checkbox" name="hobby" value="cf"/>吃饭
+  <input type="checkbox" name="hobby" value="sj"/>睡觉
+  <input type="checkbox" name="hobby" value="ddm"/>打代码
+  <br/>
+  <input type="submit" value="提交"/>
+</form>
+  </body>
+</html>

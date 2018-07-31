@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>AServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.AServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OneServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.forward.OneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TwoServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.forward.TwoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IncludeOneServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.include.OneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IncludeTwoServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.include.TwoServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>AServlet</servlet-name>
+    <url-pattern>/AServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OneServlet</servlet-name>
+    <url-pattern>/OneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TwoServlet</servlet-name>
+    <url-pattern>/TwoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IncludeOneServlet</servlet-name>
+    <url-pattern>/include/OneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IncludeTwoServlet</servlet-name>
+    <url-pattern>/include/TwoServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

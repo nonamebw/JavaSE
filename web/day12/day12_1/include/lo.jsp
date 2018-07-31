@@ -1,0 +1,4 @@
+<%
+	out.print(name);
+%>
+

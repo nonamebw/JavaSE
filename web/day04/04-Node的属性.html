@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<span id="spanid">哈哈呵呵</span>
+
+	<script type="text/javascript">
+		//获取标签对象
+		var span1 = document.getElementById("spanid");
+		//alert(span1.nodeType);   //  1
+		///alert(span1.nodeName);   // SPAN
+		///alert(span1.nodeValue);  // null
+
+		//属性
+		var id1 = span1.getAttributeNode("id");
+		//alert(id1.nodeType);  // 2
+		//alert(id1.nodeName);  // id
+		//alert(id1.nodeValue); // spanid
+
+		//获取文本
+		var text1 = span1.firstChild;
+		alert(text1.nodeType);  //  3
+		alert(text1.nodeName);  // #text
+		alert(text1.nodeValue); // 内容
+
+	</script>
+
+ </body>
+</html>

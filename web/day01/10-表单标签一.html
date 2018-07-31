@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+ </head>
+ <body>
+
+	<form action="01-hello.html" method="get">
+		手机号码：<input type="text" name="phone"/><br/>
+		创建密码：<input type="password" name="pwd"/><br/>
+		性别：<input type="radio" name="sex" value="nv" checked="checked"/>女 
+		      <input type="radio" name="sex" value="nan"/>男<br/>
+		爱好：<input type="checkbox" name="love" value="y"/>羽毛球 
+		      <input type="checkbox" name="love" value="p"   checked="checked"/>乒乓球
+			 <input type="checkbox" name="love" value="pp"/> 排球<br/>
+		文件：<input type="file"/><br/>
+		生日：<select name="birth">
+				<option value="0">请选择</option>
+				<option value="1991" selected="selected">1991</option>
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+			</select>
+		<br/>
+		自我描述：<textarea cols="10" rows="10" name="tex"></textarea><br/>
+		隐藏项：<input type="hidden" name="hid"/><br/>
+		<input type="submit" value="注册"/>
+		<input type="reset" value="重置注册"/>
+
+		<input type="button" value="普通按钮"/>
+		<br/>
+		<!--  <input type="image" src="a.jpg"/>-->
+	</form>
+ </body>
+</html>

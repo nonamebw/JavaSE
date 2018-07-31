@@ -1,0 +1,50 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<script type="text/javascript">
+
+		//concat方法
+		var str1 = "abc";
+		var str2 = "dfg";
+		document.write(str1.concat(str2));
+
+		//charAt方法
+		document.write("<hr/>");
+		var str3 = "abcdefg";
+		document.write(str3.charAt(20)); //字符位置不存在，返回空字符串
+		
+
+		//indexOf方法
+		document.write("<hr/>");
+		var str4 = "poiuyt";
+		document.write(str4.indexOf("w")); //字符不存在，返回-1
+
+		//split方法
+		document.write("<hr/>");
+		var str5 = "a-b-c-d";
+		var arr1 = str5.split("-");
+		document.write("length: "+arr1.length);
+		
+		//replace
+		document.write("<hr/>");
+		var str6 = "abcd";
+		document.write(str6);
+		document.write("<br/>");
+		document.write(str6.replace("a","Q"));
+
+		//substr  substring
+		document.write("<hr/>");
+		var str7 = "abcdefghuiop";
+		//document.write(str7.substr(5,5));  //fghui  从第五位开始，向后截取五个字符
+
+		document.write("<br/>");
+		document.write(str7.substring(3,5)); //de  从第几位开始到第几位结束  [3,5)
+	</script>
+
+ </body>
+</html>

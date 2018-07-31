@@ -1,0 +1,32 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<input type="text" name="name1" id="inputid" value="aaaa"/>
+
+	<script type="text/javascript">
+		//先要获取input标签
+		var input1 = document.getElementById("inputid");
+		//alert(input1.value);
+		//alert(input1.getAttribute("value"));
+		//alert(input1.class);
+		//alert(input1.getAttribute("class"));
+
+		///alert(input1.getAttribute("class"));
+
+		input1.setAttribute("class","haha");
+
+		///alert(input1.getAttribute("class"));
+
+		alert(input1.getAttribute("value"));
+		input1.removeAttribute("value");
+		alert(input1.getAttribute("value"));
+		
+	</script>
+
+ </body>
+</html>

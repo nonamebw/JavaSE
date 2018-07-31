@@ -1,0 +1,45 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+	#div1 {
+		width:200px;
+		height:150px;
+		border:2px solid red;
+	}
+
+	#div2 {
+		width: 250px;
+		height:150px;
+		border: 5px dashed green;
+	}
+  </style>
+ </head>
+ <body>
+	<div id="div1">
+		<ul id="ulid11">
+			<li>tom</li>
+			<li>mary</li>
+			<li>jack</li>
+		</ul>
+	</div>
+
+	<div id="div2">
+
+	</div>
+
+	<input type="button" value="add1" onclick="add11();"/>
+	<script type="text/javascript">
+		function add11() {
+			//得到div2
+			var div2 = document.getElementById("div2");
+			//获取ul
+			var ul11 = document.getElementById("ulid11");
+			//把ul添加到div2里面
+			div2.appendChild(ul11);
+		}
+		
+	</script>
+
+ </body>
+</html>

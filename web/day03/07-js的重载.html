@@ -1,0 +1,58 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<script type="text/javascript">
+
+		/*function add1() {
+			//alert("length: "+arguments.length);
+			/*for(var i=0;i<arguments.length;i++) {
+				alert("value: "+arguments[i]);
+			}
+
+			
+			return a+b;
+
+		}*/
+		
+		/*function add1(a,b,c) {
+			return a+b+c;
+		}
+		
+		function add1(a,b,c,d) {
+			return a+b+c+d;
+		}*/
+		
+		function add1() {
+			//比如传递的是两个参数
+			if(arguments.length == 2) {
+				return arguments[0]+arguments[1];
+
+			} else if (arguments.length == 3) {
+				return arguments[0]+arguments[1]+arguments[2];
+
+			} else if (arguments.length == 4) {
+
+				return arguments[0]+arguments[1]+arguments[2]+arguments[3];
+			} else {
+				return 0;
+			}
+		}
+
+		//调用
+		alert(add1(1,2));   //NaN
+
+		alert(add1(1,2,3)); //NaN
+
+		alert(add1(1,2,3,4));  // 10
+
+		alert(add1(1,2,3,4,5));  // 10
+
+	</script>
+
+ </body>
+</html>

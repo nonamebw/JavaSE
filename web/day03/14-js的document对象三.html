@@ -1,0 +1,29 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+ 	<input type="text" name="name1" value="AAAAA"/><br/>
+	<input type="text" name="name1" value="BBBBB"/><br/>
+	<input type="text" name="name1" value="CCCCC"/><br/>
+	<input type="text" name="name1" value="DDDDDD"/><br/>
+
+	<script type="text/javascript">
+
+		//演示getElementsByTagName
+		var inputs1 = document.getElementsByTagName("input");
+		//alert(inputs1.length);
+		//遍历数组，得到每个input标签
+		for(var m=0;m<inputs1.length;m++) {
+			//得到每个input标签
+			var input1 = inputs1[m];
+			//得到value值
+			alert(input1.value);
+		}
+	</script>
+
+ </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+
+	<input type="button" value="back" onclick="back1();"/>
+	<br/>
+	<input type="button" value="next" onclick="next1();"/>
+	<h1>BBBBBBBBBBBBBBBBBBBBBBB</h1>
+
+	<a href="c.html">BBBBBBBB</a>
+	<script type="text/javascript">
+		//到上一个页面
+		function back1() {
+			//history.back();
+			history.go(-1);
+		}
+
+		//到下一个页面
+		function next1() {
+			//history.forward();
+			history.go(1);
+		}
+		
+	</script>
+
+ </body>
+</html>

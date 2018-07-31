@@ -1,0 +1,29 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<input type="text" id="nameid" name="name1"/>
+	<br/>
+	<script type="text/javascript">
+
+		//write方法
+		var str = "abc";
+		document.write(str);
+
+		document.write("<hr/>");
+
+		//使用getElementById得到input标签
+		var input1 = document.getElementById("nameid");
+		//得到input里面的value值
+		alert(input1.name);
+		//向input里面设置一个值value
+		input1.value = "bbbbb";
+
+	</script>
+
+ </body>
+</html>

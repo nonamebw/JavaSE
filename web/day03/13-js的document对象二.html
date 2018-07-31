@@ -1,0 +1,27 @@
+<html>
+ <head>
+  <title>HTML示例</title>
+  <style type="text/css">
+
+  </style>
+ </head>
+ <body>
+	<input type="text" name="name1" value="aaaa"/><br/>
+	<input type="text" name="name1" value="bbbbb"/><br/>
+	<input type="text" name="name1" value="cccc"/><br/>
+	<input type="text" name="name1" value="dddd"/><br/>
+
+	<script type="text/javascript">
+
+		//使用getElementsByName得到input标签
+		var inputs = document.getElementsByName("name1");
+		//alert(inputs.length);
+		//遍历数组
+		for(var i=0;i<inputs.length;i++) {
+			var input1 = inputs[i];  //每次循环得到input对象，赋值到input1里面
+			alert(input1.value);    //得到每个input标签里面的value值
+		}
+	</script>
+
+ </body>
+</html>
